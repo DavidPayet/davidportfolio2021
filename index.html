@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Davidpayet</title>
+  <link rel="shortcut icon" type="image/svg" href="/ressources/favicon.svg" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Unicase&family=Montserrat&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+    integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/wenk/dist/wenk.css">
+  <link rel="stylesheet" href="/styles/style.css">
+  <link rel="stylesheet" href="/styles/medias.css">
+</head>
+
+<body>
+
+  <!-- Loader -->
+  <div class="loader">
+    <div class="loader-anim">
+      <div class="pointc1"></div>
+      <div class="pointc1"></div>
+      <div class="pointc1"></div>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="/" class="logo">
+      <img src="ressources/dp-logo.svg" alt="logo">
+    </a>
+
+    <div class="navigation-icon">
+      <div class="barre b1"></div>
+      <div class="barre b2"></div>
+      <div class="barre b3"></div>
+    </div>
+
+    <div class="container-menu">
+      <div class="menu">
+        <a href="#home" class="menu-item">
+          <span class="item">Accueil</span>
+          <span class="label">Commencez votre Navigation</span>
+        </a>
+
+        <a href="#about" class="menu-item">
+          <span class="item">À&#160; Propos</span>
+          <span class="label">Voir ma Description</span>
+        </a>
+
+        <a href="#portfolio" class="menu-item">
+          <span class="item">Projets</span>
+          <span class="label">Découvrez mon Portfolio</span>
+        </a>
+
+        <a href="#contact" class="menu-item">
+          <span class="item">Contact</span>
+          <span class="label">Entrons en Contact !</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- Home Section -->
+  <section id="home">
+    <span class="my-name">DAVID PAYET</span>
+
+    <div class="home-title">
+      <h1>DÉVELOPPEUR WEB</h1>
+      <br>
+      <h2 class="home-subtitle">Front End.</h2>
+      <br>
+      <div class="cta">
+        <button class="cta-btn portfolio-anchor">
+          Portfolio
+        </button>
+        <button class="cta-btn contact-anchor">
+          Contact
+        </button>
+      </div>
+    </div>
+
+    <div class="scroll-down">
+      <a href="#about"><span></span></a>
+    </div>
+  </section>
+
+
+  <!-- About Section -->
+  <section id="about">
+    <h3>À Propos</h3>
+
+    <div class="about-container">
+      <div class="profil-img">
+        <img src="ressources/profil.svg" alt="profil" class="profil">
+      </div>
+
+      <div class="txt-description">
+        <p>
+          Bonjour,
+          <br />
+          Je m'appel David et j'apprends le développement web de manière autonome dans le but d'en faire mon métier.
+        </p>
+        <br>
+        <p>
+          Le site sur lequel vous vous trouvez utilise JavaScript pour sa conception, agrémenter des librairies
+          GreenSock,
+          ScrollMagic et Charming.js pour les animations.
+        </p>
+        <br />
+        <p>
+          Pour la suite de mon parcours, je m'oriente vers l'apprentissage de ReactJS pour sa rapidité et sa
+          flexibilité.
+        </p>
+        <br>
+        <p>
+          Je vous invite à continuer votre visite et découvrir mes différents projets..
+          <span class="portfolio-anchor">👇🏽</span>
+        </p>
+      </div>
+    </div>
+
+    <div class="evolution">
+      <div class="evolution-img"></div>
+    </div>
+  </section>
+
+
+  <!-- Portfolio Section -->
+  <section id="portfolio">
+    <h3>Portfolio</h3>
+    <div class="portfolio-container"></div>
+  </section>
+
+
+  <!-- Parallax Section -->
+  <div class="parallax">
+    <div class="bcg"></div>
+    <div class="contenu">
+      <p>Most smiles are started by another smile.</p>
+      <span>Anonymous</span>
+    </div>
+  </div>
+
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h3>Me Contacter</h3>
+
+    <div class="contact-container">
+
+      <form class="form-bloc">
+        <div class="form-group">
+          <label for="lastName">Nom</label>
+          <input type="text" required id="lastName" name="lastName" minlength="3">
+        </div>
+
+        <div class="form-group">
+          <label for="firstName">Prénom</label>
+          <input type="text" required id="firstName" name="firstName" minlength="3">
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" required id="email" name="email">
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea name="message" id="message" rows="7" required minlength="7" maxlength="200"></textarea>
+        </div>
+
+        <div class="form-group">
+          <button type="submit" class="submit-btn">
+            <i class="fas fa-paper-plane"></i>
+            Envoyer
+          </button>
+        </div>
+      </form>
+
+      <div class="contact-info">
+        <div class="info">
+          <a href="https://github.com/DavidPayet" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+
+        <div class="info">
+          <a href="https://www.linkedin.com/in/david-payet/" target="_blank">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+        </div>
+
+        <div class="info">
+          <a href="mailto:davidpayet570@gmail.com" target="_blank">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+
+      <img src="ressources/plane.svg" alt="plane" id="plane-anim">
+
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2021 -davi<img src="/ressources/footer-logo.svg" alt="logo" class="footer-logo">ayet-</p>
+  </footer>
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/MotionPathPlugin.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/animation.gsap.js"></script>
+  <script src="/script/charming.min.js"></script>
+  <script src="/script/nav.js"></script>
+  <script src="/script/app.js"></script>
+</body>
+
+</html>

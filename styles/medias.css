@@ -1,0 +1,549 @@
+@media screen and (max-width: 1400px) {
+  .portfolio-container {
+    gap: 120px 5%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+
+  section h3 {
+    font-size: 50px;
+  }
+
+  /* Navigation ------------------------------------------------------------------------------- */
+  .item {
+    font-size: 30px;
+  }
+
+  .label {
+    font-size: 25px;
+  }
+
+  /* Home Section ------------------------------------------------------------------------------- */
+  .my-name {
+    font-size: 10px;
+  }
+
+  h1 {
+    font-size: 60px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  .cta-btn {
+    width: 150px;
+    font-size: 18px;
+  }
+
+  /* About Section --------------------------------------------------------------------------- */
+  .txt-description {
+    font-size: 18px;
+    padding-right: 0;
+  }
+
+  /* Portfolio Section -------------------------------------------------------------------------- */
+  .portfolio-container {
+    grid-template-columns: repeat(3, 240px);
+    grid-template-rows: 300px;
+    padding-top: 10px;
+  }
+
+  .card {
+    width: 200px;
+    height: 260px;
+  }
+
+  .card-title {
+    font-size: 16px;
+  }
+
+  .face-card.back i {
+    font-size: 40px;
+  }
+
+  /* Parallax Section -------------------------------------------------------------------------- */
+  .parallax {
+    height: 300px;
+  }
+
+  .contenu p {
+    font-size: 22px;
+  }
+
+  .contenu span {
+    font-size: 12px;
+  }
+
+  /* Contact Section ---------------------------------------------------------------------------- */
+  .form-bloc .form-group {
+    font-size: 18px;
+  }
+
+  .form-bloc .form-group input {
+    font-size: 18px;
+  }
+
+  .form-bloc .form-group .submit-btn {
+    width: 150px;
+    font-size: 18px;
+  }
+
+  #plane-anim {
+    height: 60px;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  section h3 {
+    font-size: 40px;
+  }
+
+  /* Home Section ---------------------------------------------------------------------------- */
+  .my-name {
+    font-size: 8px;
+  }
+
+  h1 {
+    font-size: 55px;
+  }
+
+  h2 {
+    font-size: 25px;
+  }
+
+  .cta-btn {
+    width: 140px;
+    font-size: 16px;
+  }
+
+  /* About Section ---------------------------------------------------------------------------- */
+  #about {
+    padding-bottom: 80px;
+  }
+
+  .about-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .profil-img {
+    display: inline;
+    margin: auto;
+
+  }
+
+  .profil {
+    width: 200px;
+  }
+
+  .txt-description {
+    text-align: center;
+    padding: 80px 140px;
+  }
+
+  .evolution {
+    margin-top: 0;
+  }
+
+  /* Portfolio Section ------------------------------------------------------------------------ */
+  .portfolio-container {
+    grid-template-columns: repeat(3, 220px);
+  }
+
+  .card {
+    width: 190px;
+    height: 250px;
+  }
+
+  .card-title {
+    font-size: 16px;
+  }
+
+  .face-card.back i {
+    font-size: 40px;
+  }
+
+  /* Contact Section ------------------------------------------------------------------------ */
+  .contact-container {
+    width: 500px;
+  }
+
+  .form-bloc {
+    height: 570px;
+  }
+
+  .contact-info {
+    width: 100px;
+    font-size: 30px;
+    padding-left: 40px;
+  }
+
+  .form-bloc .form-group {
+    width: 350px;
+    font-size: 16px;
+  }
+
+  .form-bloc .form-group input,
+  .form-bloc .form-group textarea {
+    font-size: 16px;
+  }
+
+  .form-bloc .form-group .submit-btn {
+    width: 140px;
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  section h3 {
+    font-size: 30px;
+  }
+
+  h3::before {
+    height: 2px;
+  }
+
+  /* Navigation ---------------------------------------------------------------------------- */
+  .item {
+    font-size: 25px;
+  }
+
+  .label {
+    font-size: 20px;
+  }
+
+  /* Home Section ---------------------------------------------------------------------------- */
+  .my-name {
+    font-size: 6px;
+  }
+
+  h1 {
+    font-size: 35px;
+  }
+
+  h2 {
+    font-size: 15px;
+  }
+
+  .cta-btn {
+    width: 120px;
+    font-size: 14px;
+  }
+
+  /* About Section ---------------------------------------------------------------------------- */
+  .profil {
+    width: 150px;
+  }
+
+  .txt-description {
+    font-size: 16px;
+    text-align: center;
+    padding: 80px 140px;
+  }
+
+
+
+  /* Portfolio Section ------------------------------------------------------------------------ */
+  .portfolio-container {
+    grid-template-columns: repeat(2, 220px);
+    padding-top: 0;
+  }
+
+  /* Parallax Section ------------------------------------------------------------------------ */
+  .parallax {
+    height: 240px;
+    padding: 50px 0;
+  }
+
+  .contenu {
+    width: 70%;
+  }
+
+  .contenu p {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .contenu span {
+    font-size: 10px;
+  }
+
+  /* Contact Section ------------------------------------------------------------------------ */
+  .contact-container {
+    width: 400px;
+  }
+
+  .form-bloc {
+    height: 470px;
+  }
+
+  .contact-info {
+    width: 90px;
+    font-size: 28px;
+    padding-left: 30px;
+  }
+
+  .form-bloc .form-group {
+    width: 250px;
+    font-size: 16px;
+  }
+
+  .form-bloc .form-group input,
+  .form-bloc .form-group textarea {
+    font-size: 16px;
+  }
+
+  .form-bloc .form-group .submit-btn {
+    width: 140px;
+    font-size: 16px;
+  }
+
+  /* Footer ------------------------------------------------------------------------ */
+  footer {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  section h3 {
+    font-size: 20px;
+    padding-top: 60px;
+    margin-bottom: 60px;
+  }
+
+  section h3::before {
+    width: 10%;
+    height: 1px;
+    bottom: -3px;
+  }
+
+  /* Navigation ------------------------------------------------------------------------ */
+  .logo {
+    top: 9px;
+    left: 20px;
+  }
+
+  .logo img {
+    height: 26px;
+  }
+
+  .navigation-icon {
+    top: 4px;
+    right: 20px;
+  }
+
+  .barre {
+    width: 20px;
+    height: 2px;
+  }
+
+  .b1 {
+    top: -5px;
+  }
+
+  .b3 {
+    top: 5px;
+  }
+
+  .item {
+    font-size: 16px;
+  }
+
+  .label {
+    font-size: 11px;
+  }
+
+  /* Home Section ------------------------------------------------------------------------ */
+  h1 {
+    font-size: 22px;
+  }
+
+  h2 {
+    font-size: 12px;
+  }
+
+  .cta-btn {
+    width: 100px;
+    font-size: 10px;
+  }
+
+  .scroll-down a span {
+    width: 10px;
+    height: 40px;
+    border: 1px solid #ff7b00a3;
+  }
+
+  .scroll-down a span::before {
+    height: 8px;
+    bottom: 25px;
+  }
+
+  /* About Section ------------------------------------------------------------------------ */
+  .profil {
+    width: 120px;
+  }
+
+  .txt-description {
+    font-size: 14px;
+    text-align: center;
+    padding: 80px 80px 40px;
+  }
+
+  /* Portfolio Section ------------------------------------------------------------------------ */
+  .portfolio-container {
+    grid-template-columns: 300px;
+    gap: 100px;
+  }
+
+  .card {
+    width: 220px;
+    height: 280px;
+  }
+
+  /* Parallax Section ------------------------------------------------------------------------ */
+  .contenu p {
+    font-size: 16px;
+  }
+
+  /* Contact Section ------------------------------------------------------------------------ */
+  #contact {
+    height: 100vh;
+  }
+  
+  .contact-info {
+    grid-area: 4 / 1 / 4 / 13;
+    width: auto;
+    height: 100px;
+    padding: 0;
+    margin: 20px;
+    border-radius: 2px 2px 10px 10px;
+    display: flex;
+    background: none;
+  }
+
+  .contact-info .info {
+    margin: 0 auto;
+  }
+
+  .contact-info .info a i {
+    color: #ff7b00ac;
+  }
+
+  /* Footer ------------------------------------------------------------------------ */
+  footer {
+    font-size: 12px;
+  }
+
+  .footer-logo {
+    width: 20px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+
+  section h3 {
+    letter-spacing: 6px;
+  }
+
+  /* Navigation ------------------------------------------------------------------------ */
+  .logo {
+    left: 10px;
+  }
+
+  .navigation-icon {
+    right: 10px;
+  }
+
+  /* Home Section ------------------------------------------------------------------------ */
+  .my-name {
+    font-size: 4px;
+  }
+
+  .home-title {
+    margin-top: 0;
+  }
+
+  h1 {
+    font-size: 16px;
+  }
+
+  h2 {
+    font-size: 8px;
+  }
+
+  .cta {
+    justify-content: center;
+  }
+
+  .cta-btn {
+    width: 100px;
+    font-size: 10px;
+  }
+
+  /* About Section ------------------------------------------------------------------------ */
+  #about {
+    padding-bottom: 20px;
+  }
+  
+  .profil {
+    width: 100px;
+  }
+
+  .txt-description {
+    font-size: 12px;
+    text-align: center;
+    padding: 80px 60px 0;
+  }
+
+  /* Parallax Section ------------------------------------------------------------------------ */
+  .contenu p {
+    font-size: 14px;
+    letter-spacing: 4px;
+  }
+
+  .contenu span {
+    font-size: 8px;
+    letter-spacing: 5px;
+  }
+
+  .contenu span::before {
+    width: 10px;
+  }
+
+  .contenu span::after {
+    width: 10px;
+  }
+
+  /* Contact Section ------------------------------------------------------------------------ */
+  .contact-container {
+    width: 280px;
+  }
+
+  .form-bloc .form-group {
+    width: 220px;
+    font-size: 12px;
+  }
+
+  .form-bloc .form-group input {
+    font-size: 12px;
+    border-bottom: 1px solid #aaa;
+  }
+
+  .form-bloc .form-group .submit-btn {
+    width: 120px;
+    font-size: 12px;
+    border: 2px solid #ff7b00;
+    margin-bottom: 0;
+  }
+
+  /* Footer ------------------------------------------------------------------------ */
+  footer {
+    font-size: 8px;
+  }
+
+  .footer-logo {
+    width: 18px;
+  }
+}
