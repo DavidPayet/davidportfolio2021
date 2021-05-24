@@ -509,6 +509,7 @@
   }
 
   .contenu span::before {
+    left: -30px;
     width: 10px;
   }
 
