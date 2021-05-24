@@ -203,9 +203,9 @@ const contactInfo = document.querySelector('.contact-info');
 const tlContact = gsap.timeline();
 
 tlContact
-  .from(contactTitle, { y: -200, opacity: 0, zIndex: -1, duration: 1 })
-  .from(contactForm, { x: -200, opacity: 0, duration: 1 })
-  .from(contactInfo, { x: 200, opacity: 0, duration: 1 }, '-=1')
+  .from(contactTitle, { y: -200, autoAlpha: 0, zIndex: -1, duration: 1 })
+  .from(contactForm, { x: -50, autoAlpha: 0, duration: 1 })
+  .from(contactInfo, { x: 50, autoAlpha: 0, duration: 1 }, '-=1')
 
 
 const contactScene = new ScrollMagic.Scene({
