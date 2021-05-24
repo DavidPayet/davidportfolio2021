@@ -256,11 +256,7 @@
     height: 240px;
     padding: 50px 0;
   }
-
-  .contenu {
-    width: 70%;
-  }
-
+  
   .contenu p {
     font-size: 20px;
     margin-bottom: 20px;
@@ -268,6 +264,14 @@
 
   .contenu span {
     font-size: 10px;
+  }
+
+  .contenu span::before {
+    left: 10vw;
+  }
+
+  .contenu span::after {
+    right: 10vw;
   }
 
   /* Contact Section ------------------------------------------------------------------------ */
@@ -509,7 +513,6 @@
   }
 
   .contenu span::before {
-    left: -30px;
     width: 10px;
   }
 
