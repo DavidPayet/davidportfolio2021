@@ -409,7 +409,7 @@
 
   /* Contact Section ------------------------------------------------------------------------ */
   #contact {
-    height: 100vh;
+    height: max-content;
   }
   
   .contact-info {
