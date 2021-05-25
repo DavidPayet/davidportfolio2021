@@ -118,7 +118,7 @@
         </p>
         <br>
         <p>
-          Je vous invite à continuer votre visite et découvrir mes différents projets. 
+          Je vous invite à continuer votre visite et découvrir mes différents projets.
           <a href="#portfolio">👇🏽</a>
         </p>
       </div>
@@ -153,8 +153,10 @@
 
     <div class="contact-container">
 
-      <form class="form-bloc" name="contact" method="POST" data-netlify="true">
-        
+      <form class="form-bloc" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+
+        <input type="hidden" name="bot-field" value="contact">
+
         <div class="form-group">
           <label for="lastName">Nom</label>
           <input type="text" required id="lastName" name="lastName" minlength="3">
