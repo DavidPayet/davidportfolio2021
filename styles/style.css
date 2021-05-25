@@ -376,12 +376,6 @@ h2 {
 /* Scroll Parallax ------------------------------------------------------------------------------ */
 section {
   position: relative;
-}
-
-#home,
-#about,
-#portfolio,
-#contact {
   background-size: cover;
   -webkit-background-size: cover;
   background-attachment: fixed, scroll;
@@ -426,7 +420,6 @@ section {
   animation: bottomFinger .4s infinite alternate;
   cursor: pointer;
   text-decoration: none;
-  display: inline;
 }
 
 @keyframes bottomFinger {
