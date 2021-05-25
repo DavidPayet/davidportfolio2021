@@ -383,7 +383,8 @@ section {
 #portfolio,
 #contact {
   background-size: cover;
-  background-attachment: fixed;
+  -webkit-background-size: cover;
+  background-attachment: fixed, scroll;
 }
 
 /* About Section -------------------------------------------------------------------------------- */
@@ -420,10 +421,12 @@ section {
   color: #21295C;
 }
 
-.txt-description span {
+.txt-description a {
   position: absolute;
   animation: bottomFinger .4s infinite alternate;
   cursor: pointer;
+  text-decoration: none;
+  display: inline;
 }
 
 @keyframes bottomFinger {
@@ -642,6 +645,7 @@ i[data-wenk]::after {
   margin: 0 auto;
   display: grid;
   grid-template: 1fr 2fr 1fr /repeat(12, 1fr);
+  padding-bottom: 80px;
 }
 
 .form-bloc {

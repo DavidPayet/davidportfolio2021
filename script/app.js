@@ -9,7 +9,7 @@ const navBtn = document.querySelector('.navigation-icon');
 const logo = document.querySelector('.logo');
 const homeScrollDownBtn = document.querySelector('.scroll-down a span');
 const homeCtaBtn = document.querySelectorAll('.cta-btn');
-const portfolioAnchors = document.querySelectorAll('.portfolio-anchor');
+const portfolioAnchors = document.querySelector('.portfolio-anchor');
 const contactAnchor = document.querySelector('.contact-anchor');
 const tlHome = gsap.timeline({ paused: true });
 
@@ -23,9 +23,9 @@ tlHome
   .from(homeScrollDownBtn, { autoAlpha: 0, ease: 'power3.out', duration: 1.5 }, '-=.4')
 
 
-portfolioAnchors.forEach(portfolioAnchor => portfolioAnchor.addEventListener('click', () => {
+portfolioAnchors.addEventListener('click', () => {
   window.location.href = '#portfolio';
-}))
+})
 
 contactAnchor.addEventListener('click', () => {
   window.location.href = '#contact';
