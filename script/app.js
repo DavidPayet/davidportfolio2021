@@ -110,7 +110,7 @@ const tlPortfolio = gsap.timeline();
 tlPortfolio
   .from(portfolioTitle, { y: -200, opacity: 0, zIndex: -1, duration: 1 })
   .from(portfolioCards, { opacity: 0, duration: 1 })
-  // .staggerFrom(portfolioCards, 1, { opacity: 0 }, .2, '-=.5')
+// .staggerFrom(portfolioCards, 1, { opacity: 0 }, .2, '-=.5')
 
 
 const portfolioScene = new ScrollMagic.Scene({
@@ -240,8 +240,10 @@ tlPlane
 
 
 submitBtn.addEventListener('click', () => {
-  tlPlane.play();
-  tlPlane.restart();
+  if (document.documentElement.clientWidth > 576) {
+    tlPlane.play();
+    tlPlane.restart();
+  }
 })
 
 
