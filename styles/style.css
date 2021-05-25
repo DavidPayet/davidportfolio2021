@@ -696,6 +696,7 @@ i[data-wenk]::after {
 }
 
 .form-bloc .form-group:nth-child(4) label {
+  position: unset;
   margin-bottom: 10px;
   transition: .2s ease-out;
   cursor: pointer;
