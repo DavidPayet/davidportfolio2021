@@ -239,12 +239,38 @@ tlPlane
   .to(plane, { opacity: 0, duration: .1, display: 'none' })
 
 
-submitBtn.addEventListener('click', () => {
+submitBtn.addEventListener('submit', () => {
   if (document.documentElement.clientWidth > 576) {
     tlPlane.play();
     tlPlane.restart();
   }
 })
+
+// Contact Section Submission
+const sendingForm = document.querySelector('form');
+
+const handleSubmit = (e) => {
+  e.preventDefault()
+  let myForm = document.querySelector('form');
+  let formData = new FormData(myForm);
+  
+  fetch('/', {
+    method: 'POST',
+    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    body: new URLSearchParams(formData).toString()
+  })
+  .then(() => {
+    console.log('Form successfully submitted')
+    if (document.documentElement.clientWidth > 576) {
+      tlPlane.play();
+      tlPlane.restart();
+    }
+  })
+    
+  .catch((error) => alert(error))
+}
+
+sendingForm.addEventListener('submit', handleSubmit);
 
 
 window.addEventListener('load', () => {
