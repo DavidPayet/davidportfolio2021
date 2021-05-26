@@ -246,8 +246,10 @@ submitBtn.addEventListener('submit', () => {
   }
 })
 
-// Contact Section Submission
+// Contact Form Submission
 const sendingForm = document.querySelector('form');
+const inputs = document.querySelectorAll('input.inputs');
+const txtArea = document.querySelector('textarea.txt-area');
 
 const handleSubmit = (e) => {
   e.preventDefault()
@@ -266,7 +268,10 @@ const handleSubmit = (e) => {
         tlPlane.restart();
       }
     })
-
+    .then(() => {
+      inputs.forEach(input => input.value = '');
+      txtArea.value = '';
+    })
     .catch((error) => alert(error))
 }
 
