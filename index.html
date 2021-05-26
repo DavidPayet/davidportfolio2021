@@ -153,7 +153,7 @@
 
     <div class="contact-container">
 
-      <form class="form-bloc" name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true"
+      <form class="form-bloc" name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field"
         autocomplete="off">
 
         <div class="form-group">
@@ -177,9 +177,13 @@
             maxlength="250"></textarea>
         </div>
 
-        <div class="form-group recaptcha">
+        <!-- <div class="form-group recaptcha">
           <div data-netlify-recaptcha="true"></div>
-        </div>
+        </div> -->
+
+        <p class="hidden">
+          <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
+        </p>
 
         <div class="form-group">
           <button type="submit" class="submit-btn">
@@ -229,6 +233,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/animation.gsap.js"></script>
   <script src="/script/charming.min.js"></script>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   <script src="/script/nav.js"></script>
   <script src="/script/app.js"></script>
 </body>

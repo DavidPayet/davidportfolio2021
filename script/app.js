@@ -250,6 +250,7 @@ submitBtn.addEventListener('submit', () => {
 const sendingForm = document.querySelector('form');
 const inputs = document.querySelectorAll('input.inputs');
 const txtArea = document.querySelector('textarea.txt-area');
+const succesMessage = 'Merci pour votre message 😃 ! La transmission à été un succès ✌🏼. Je vous répondrai sans tarder.';
 
 const handleSubmit = (e) => {
   e.preventDefault()
@@ -262,15 +263,24 @@ const handleSubmit = (e) => {
     body: new URLSearchParams(formData).toString()
   })
     .then(() => {
-      console.log('Form successfully submitted')
       if (document.documentElement.clientWidth > 576) {
+        inputs.forEach(input => input.value = '');
+        txtArea.value = '';
         tlPlane.play();
         tlPlane.restart();
+
+        setTimeout(() => {
+          console.log('Form successfully submitted');
+          alert(succesMessage);
+        }, 3000);
+
+      } else {
+        inputs.forEach(input => input.value = '');
+        txtArea.value = '';
+
+        console.log('Form successfully submitted');
+        alert(succesMessage);
       }
-    })
-    .then(() => {
-      inputs.forEach(input => input.value = '');
-      txtArea.value = '';
     })
     .catch((error) => alert(error))
 }
