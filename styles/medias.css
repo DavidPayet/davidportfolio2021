@@ -81,11 +81,11 @@
     font-size: 18px;
   }
 
-  .form-bloc .form-group input {
+  .form-bloc .form-group input.inputs {
     font-size: 18px;
   }
 
-  .form-bloc .form-group .submit-btn {
+  .form-bloc .form-group button.submit-btn {
     width: 150px;
     font-size: 18px;
   }
@@ -185,12 +185,12 @@
     font-size: 16px;
   }
 
-  .form-bloc .form-group input,
-  .form-bloc .form-group textarea {
+  .form-bloc .form-group input.inputs,
+  .form-bloc .form-group textarea.txt-area {
     font-size: 16px;
   }
 
-  .form-bloc .form-group .submit-btn {
+  .form-bloc .form-group button.submit-btn {
     width: 140px;
     font-size: 16px;
   }
@@ -256,7 +256,7 @@
     height: 240px;
     padding: 50px 0;
   }
-  
+
   .contenu p {
     font-size: 20px;
     margin-bottom: 20px;
@@ -294,12 +294,12 @@
     font-size: 16px;
   }
 
-  .form-bloc .form-group input,
-  .form-bloc .form-group textarea {
+  .form-bloc .form-group input.inputs,
+  .form-bloc .form-group textarea.txt-area {
     font-size: 16px;
   }
 
-  .form-bloc .form-group .submit-btn {
+  .form-bloc .form-group button.submit-btn {
     width: 140px;
     font-size: 16px;
   }
@@ -415,10 +415,11 @@
   #contact {
     height: max-content;
   }
+
   .contact-container {
     padding-bottom: 0;
   }
-  
+
   .contact-info {
     grid-area: 4 / 1 / 4 / 13;
     width: auto;
@@ -489,7 +490,7 @@
   #about {
     padding-bottom: 20px;
   }
-  
+
   .profil {
     width: 100px;
   }
@@ -529,12 +530,12 @@
     font-size: 12px;
   }
 
-  .form-bloc .form-group input {
+  .form-bloc .form-group input.inputs {
     font-size: 12px;
     border-bottom: 1px solid #aaa;
   }
 
-  .form-bloc .form-group .submit-btn {
+  .form-bloc .form-group button.submit-btn {
     width: 120px;
     font-size: 12px;
     margin-bottom: 0;
