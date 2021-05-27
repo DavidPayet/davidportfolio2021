@@ -11,7 +11,7 @@ html {
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Fahkwang', sans-serif;
   background: #F7F7FF;
 }
 
@@ -47,6 +47,7 @@ h3::before {
 }
 
 button {
+  font-family: 'Fahkwang', sans-serif;
   position: relative;
   overflow: hidden;
   width: 200px;
@@ -505,6 +506,7 @@ section {
   transform: translate(-50%, -50%);
   font-size: 20px;
   letter-spacing: 2px;
+  font-weight: 200;
   white-space: nowrap;
   color: #f7f7f7;
   z-index: 1;
@@ -556,7 +558,7 @@ section {
 }
 
 i[data-wenk]::after {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Fahkwang', sans-serif;
   letter-spacing: 1px;
   text-shadow: none;
   font-weight: 700;
@@ -720,7 +722,7 @@ i[data-wenk]::after {
   font-size: 20px;
   color: #f7f7ff;
   transition: .2s ease-out;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Fahkwang', sans-serif;
   font-size: 18px;
   letter-spacing: 2px;
 }
@@ -736,12 +738,13 @@ i[data-wenk]::after {
   color: #f7f7ff;
   font-size: 20px;
   transition: .2s ease-out;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Fahkwang', sans-serif;
   font-size: 18px;
   letter-spacing: 2px;
 }
 
 .form-bloc p.hidden {
+  font-family: 'Fahkwang', sans-serif;
   margin-bottom: 45px;
   display: flex;
   justify-content: center;
@@ -750,6 +753,7 @@ i[data-wenk]::after {
 }
 
 .form-bloc p.hidden input[name="bot-field"] {
+  font-family: 'Fahkwang', sans-serif;
   background: transparent;
   width: 100%;
   border: 1px solid #aaa;
