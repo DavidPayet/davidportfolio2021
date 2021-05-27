@@ -731,9 +731,12 @@ i[data-wenk]::after {
   letter-spacing: 2px;
 }
 
-.form-bloc .form-group.recaptcha div,
+.form-bloc p.hidden {
+  visibility: hidden;
+}
+
 .form-bloc .form-group button.submit-btn {
-  margin: 0 auto;
+  margin: 0 auto 20px;
 }
 
 /* Animation */
