@@ -4,19 +4,25 @@ const loader = document.querySelector('.loader');
 
 // Custum Cursor
 const circleCursor = document.querySelector('.circle-cursor');
+const body = document.querySelector('body');
 
-gsap.set(circleCursor, { xPercent: -50, yPercent: -50 });
+if (document.documentElement.clientWidth > 1200) {
 
+  gsap.set(circleCursor, { xPercent: -50, yPercent: -50 });
 
-const moveCircle = (e) => {
-  gsap.to(circleCursor, .3, { x: e.clientX, y: e.clientY })
+  const moveCircle = (e) => {
+    gsap.to(circleCursor, .3, { x: e.clientX, y: e.clientY });
+  }
+
+  document.addEventListener('mousemove', moveCircle);
+
+  document.addEventListener('click', () => {
+    gsap.fromTo(circleCursor, { scale: 1, backgroundColor: 'transparent', border: '1px solid #ff7b00' }, { scale: 1.5, duration: .2, backgroundColor: '#ff7b00', border: 'none' }).reverse(2)
+  });
+
+} else {
+  body.removeChild(circleCursor);
 }
-
-document.addEventListener('mousemove', moveCircle);
-
-document.addEventListener('click', () => {
-  gsap.fromTo(circleCursor, { scale: 1, backgroundColor: 'transparent', border: '1px solid #ff7b00' }, { scale: 1.5, duration: .2, backgroundColor: '#ff7b00', border: 'none' }).reverse(2)
-})
 
 
 // Home Animation
