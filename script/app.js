@@ -1,6 +1,24 @@
 // Loader
 const loader = document.querySelector('.loader');
 
+
+// Custum Cursor
+const circleCursor = document.querySelector('.circle-cursor');
+
+gsap.set(circleCursor, { xPercent: -50, yPercent: -50 });
+
+
+const moveCircle = (e) => {
+  gsap.to(circleCursor, .3, { x: e.clientX, y: e.clientY })
+}
+
+document.addEventListener('mousemove', moveCircle);
+
+document.addEventListener('click', () => {
+  gsap.fromTo(circleCursor, { scale: 1, backgroundColor: 'transparent', border: '1px solid #ff7b00' }, { scale: 1.5, duration: .2, backgroundColor: '#ff7b00', border: 'none' }).reverse(2)
+})
+
+
 // Home Animation
 const homeName = document.querySelector('.my-name');
 const homeTitle = document.querySelector('h1');
@@ -15,12 +33,12 @@ const tlHome = gsap.timeline({ paused: true });
 
 tlHome
   .from(homeName, { y: -50, autoAlpha: 0, ease: 'power3.out', duration: 1 })
-  .from(logo, { x: -50, autoAlpha: 0, rotationY: 720, ease: 'power3.out', duration: 1 }, '-=1')
-  .from(navBtn, { x: 150, autoAlpha: 0, rotation: 720, ease: 'power3.out', duration: 1 }, '-=1')
   .from(homeTitle, { scaleX: 1.05, autoAlpha: 0, ease: 'power3.out', duration: 1 })
-  .from(HomeSbTitle, { scaleY: -2, autoAlpha: 0, ease: 'power3.out', duration: 1 }, '-=1')
-  .staggerFrom(homeCtaBtn, 1, { autoAlpha: 0 }, .2,)
-  .from(homeScrollDownBtn, { autoAlpha: 0, ease: 'power3.out', duration: 1.5 }, '-=.4')
+  .from(HomeSbTitle, { rotationX: '360deg', autoAlpha: 0, ease: 'power3.out', duration: 1 }, '-=1')
+  .staggerFrom(homeCtaBtn, 1, { autoAlpha: 0 }, .2)
+  .from(logo, { x: -50, autoAlpha: 0, rotationY: 720, ease: 'power3.out', duration: 1 }, '-=.3')
+  .from(navBtn, { x: 150, autoAlpha: 0, rotation: 720, ease: 'power3.out', duration: 1 }, '-=1')
+  .from(homeScrollDownBtn, { autoAlpha: 0, ease: 'power3.out', duration: 1 }, '-=1')
 
 
 portfolioAnchors.addEventListener('click', () => {
@@ -50,7 +68,7 @@ tlAbout
 
 const aboutScene = new ScrollMagic.Scene({
   triggerElement: aboutSection,
-  triggerHook: .9,
+  triggerHook: .5,
   reverse: true
 })
   .setTween(tlAbout)
@@ -110,12 +128,11 @@ const tlPortfolio = gsap.timeline();
 tlPortfolio
   .from(portfolioTitle, { y: -200, opacity: 0, zIndex: -1, duration: 1 })
   .from(portfolioCards, { opacity: 0, duration: 1 })
-// .staggerFrom(portfolioCards, 1, { opacity: 0 }, .2, '-=.5')
 
 
 const portfolioScene = new ScrollMagic.Scene({
   triggerElement: portfolioSection,
-  triggerHook: .9,
+  triggerHook: .5,
   reverse: true
 })
   .setTween(tlPortfolio)
@@ -144,7 +161,6 @@ tlQuote
   .from(contenu, { scale: 2, opacity: 0, ease: 'power3.out', duration: 1 })
 
 const displayQuote = () => {
-
   let index = Math.floor(Math.random() * data.length);
   let quote = data[index].text;
   let author = data[index].author;
@@ -155,7 +171,6 @@ const displayQuote = () => {
 
   texts.innerText = quote;
   authors.innerText = author;
-
 }
 
 
@@ -210,7 +225,7 @@ tlContact
 
 const contactScene = new ScrollMagic.Scene({
   triggerElement: contactSection,
-  triggerHook: .9,
+  triggerHook: .5,
   reverse: true
 })
   .setTween(tlContact)
