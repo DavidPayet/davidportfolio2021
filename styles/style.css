@@ -732,7 +732,20 @@ i[data-wenk]::after {
 }
 
 .form-bloc p.hidden {
-  visibility: hidden;
+  margin-bottom: 45px;
+  display: flex;
+  justify-content: center;
+  font-size: 10px;
+  color: #aaa;
+}
+
+.form-bloc p.hidden input[name="bot-field"] {
+  background: transparent;
+  width: 100%;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  outline: none;
+  color: #f7f7ff;
 }
 
 .form-bloc .form-group button.submit-btn {

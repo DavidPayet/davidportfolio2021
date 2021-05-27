@@ -251,7 +251,6 @@ const sendingForm = document.querySelector('form');
 const inputs = document.querySelectorAll('input.inputs');
 const txtArea = document.querySelector('textarea.txt-area');
 const succesMessage = 'Merci pour votre message 😃 ! La transmission à été un succès ✌🏼. Je vous répondrai sans tarder.';
-const botField = document.querySelector('input[name="bot-field"]');
 
 const handleSubmit = (e) => {
   e.preventDefault()

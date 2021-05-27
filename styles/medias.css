@@ -535,6 +535,10 @@
     border-bottom: 1px solid #aaa;
   }
 
+  .form-bloc p.hidden {
+    font-size: 8px;
+  }
+
   .form-bloc .form-group button.submit-btn {
     width: 120px;
     font-size: 12px;
