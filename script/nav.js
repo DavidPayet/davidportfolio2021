@@ -44,7 +44,7 @@ btnNav.addEventListener('click', () => {
       gsap.to(b3, { top: 5, rotation: 0, duration: .1 });
       gsap.to(containerMenu, { left: '-100%', ease: 'power4.easeIn', width: 0, height: 0, duration: .5, opacity: 0 });
     }
-    
+
   }
 })
 
@@ -86,9 +86,19 @@ menuItem.forEach(item => item.addEventListener('mouseenter', (e) => {
 }))
 
 menuItem.forEach(item => item.addEventListener('click', () => {
+
   toggle--;
-  gsap.to(b2, { delay: .25, display: 'block', duration: .01 });
-  gsap.to(b1, { top: -5, rotation: 0, duration: .1 });
-  gsap.to(b3, { top: 5, rotation: 0, duration: .1 });
-  gsap.to(containerMenu, { left: '-100%', ease: 'power4.easeIn', width: 0, height: 0, duration: .5 });
+
+  if (document.documentElement.clientWidth > 576) {
+    gsap.to(b2, { delay: .25, display: 'block', duration: .01 });
+    gsap.to(b1, { top: -10, rotation: 0, duration: .1 });
+    gsap.to(b3, { top: 10, rotation: 0, duration: .1 });
+    gsap.to(containerMenu, { left: '-100%', ease: 'power4.easeIn', width: 0, height: 0, duration: .5 });
+  } else {
+    gsap.to(b2, { delay: .25, display: 'block', duration: .01 });
+    gsap.to(b1, { top: -5, rotation: 0, duration: .1 });
+    gsap.to(b3, { top: 5, rotation: 0, duration: .1 });
+    gsap.to(containerMenu, { left: '-100%', ease: 'power4.easeIn', width: 0, height: 0, duration: .5 });
+  }
+
 }))
