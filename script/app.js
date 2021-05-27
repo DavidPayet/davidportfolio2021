@@ -251,38 +251,49 @@ const sendingForm = document.querySelector('form');
 const inputs = document.querySelectorAll('input.inputs');
 const txtArea = document.querySelector('textarea.txt-area');
 const succesMessage = 'Merci pour votre message 😃 ! La transmission à été un succès ✌🏼. Je vous répondrai sans tarder.';
+const botField = document.querySelector('input[name="bot-field"]');
 
 const handleSubmit = (e) => {
   e.preventDefault()
   let myForm = document.querySelector('form');
   let formData = new FormData(myForm);
 
-  fetch('/', {
-    method: 'POST',
-    headers: { "Content-Type": "application/x-www-form-urlencoded" },
-    body: new URLSearchParams(formData).toString()
-  })
-    .then(() => {
-      if (document.documentElement.clientWidth > 576) {
-        inputs.forEach(input => input.value = '');
-        txtArea.value = '';
-        tlPlane.play();
-        tlPlane.restart();
+  if (botField.value === '') {
 
-        setTimeout(() => {
+    fetch('/', {
+      method: 'POST',
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(formData).toString()
+    })
+      .then(() => {
+        if (document.documentElement.clientWidth > 576) {
+          inputs.forEach(input => input.value = '');
+          txtArea.value = '';
+          tlPlane.play();
+          tlPlane.restart();
+
+          setTimeout(() => {
+            console.log('Form successfully submitted');
+            alert(succesMessage);
+          }, 3000);
+
+        } else {
+          inputs.forEach(input => input.value = '');
+          txtArea.value = '';
+
           console.log('Form successfully submitted');
           alert(succesMessage);
-        }, 3000);
+        }
+      })
+      .catch((error) => alert(error))
 
-      } else {
-        inputs.forEach(input => input.value = '');
-        txtArea.value = '';
+  } else {
 
-        console.log('Form successfully submitted');
-        alert(succesMessage);
-      }
-    })
-    .catch((error) => alert(error))
+    console.log('Bot field filled !');
+    alert('Votre message ne peut être envoyé car vous avez rempli le champ dédié aux robot 🤖 !')
+    return;
+
+  }
 }
 
 sendingForm.addEventListener('submit', handleSubmit);
