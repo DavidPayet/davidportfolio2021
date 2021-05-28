@@ -1,9 +1,3 @@
-@media screen and (max-width: 1400px) {
-  .portfolio-container {
-    gap: 120px 5%;
-  }
-}
-
 @media screen and (max-width: 1300px) {
 
   section h3 {
@@ -41,26 +35,6 @@
   .txt-description {
     font-size: 18px;
     padding-right: 0;
-  }
-
-  /* Portfolio Section -------------------------------------------------------------------------- */
-  .portfolio-container {
-    grid-template-columns: repeat(3, 240px);
-    grid-template-rows: 300px;
-    padding-top: 10px;
-  }
-
-  .card {
-    width: 200px;
-    height: 260px;
-  }
-
-  .card-title {
-    font-size: 16px;
-  }
-
-  .face-card.back i {
-    font-size: 40px;
   }
 
   /* Parallax Section -------------------------------------------------------------------------- */
@@ -149,16 +123,15 @@
 
   /* Portfolio Section ------------------------------------------------------------------------ */
   .portfolio-container {
-    grid-template-columns: repeat(3, 220px);
+    grid-template-columns: repeat(2, 280px);
   }
 
   .card {
-    width: 190px;
-    height: 250px;
+    height: 340px;
   }
 
   .card-title {
-    font-size: 16px;
+    font-size: 18px;
   }
 
   .face-card.back i {
@@ -249,6 +222,10 @@
   .portfolio-container {
     grid-template-columns: repeat(2, 220px);
     padding-top: 0;
+  }
+
+  .card {
+    height: 300px;
   }
 
   /* Parallax Section ------------------------------------------------------------------------ */
@@ -397,13 +374,8 @@
 
   /* Portfolio Section ------------------------------------------------------------------------ */
   .portfolio-container {
-    grid-template-columns: 300px;
-    gap: 100px;
-  }
-
-  .card {
-    width: 220px;
-    height: 280px;
+    grid-template-columns: 220px;
+    gap: 80px;
   }
 
   /* Parallax Section ------------------------------------------------------------------------ */
