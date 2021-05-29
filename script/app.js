@@ -103,7 +103,7 @@ const fetchProjects = () => {
             <div class="face-card back">
               <img src=${project.back_img} alt="illustration projet"/>
               <div class="icones">
-                <a href="#" target="_blank" rel="noopener">
+                <a href="${project.project_link}" target="_blank" rel="noopener">
                   <i class="fas fa-search-plus" data-wenk="Voir le Projet"></i>
                 </a>
                 <a href=${project.github_source_code} target="_blank" rel="noopener">
