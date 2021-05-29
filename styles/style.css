@@ -176,8 +176,8 @@ button:hover::before {
 }
 
 .logo img {
-  max-width: 35px;
-  max-height: 45px;
+  width: 35px;
+  height: 45px;
 }
 
 .navigation-icon {
@@ -415,8 +415,8 @@ section {
 }
 
 .profil {
-  max-width: 270px;
-  max-height: 235px;
+  width: 270px;
+  height: 235px;
 }
 
 .txt-description {
@@ -809,9 +809,16 @@ footer {
   font-size: 18px;
 }
 
+footer p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .footer-logo {
   width: 25px;
-  max-height: 33px;
+  height: 33px;
   margin-right: 10px;
   margin-bottom: -13px;
+  transform: translateY(-2px);
 }

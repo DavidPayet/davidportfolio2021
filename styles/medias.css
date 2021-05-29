@@ -418,6 +418,7 @@
 
   .footer-logo {
     width: 20px;
+    transform: translateY(-4px);
   }
 }
 
