@@ -4,7 +4,7 @@
     "title": "Comming Soon",
     "front_img": "https://source.unsplash.com/random/260x320",
     "back_img": "https://source.unsplash.com/random/260x320/?water",
-    "project_link": "",
+    "project_link": "/",
     "github_source_code": "https://github.com/DavidPayet"
   },
   {
@@ -12,7 +12,7 @@
     "title": "Comming Soon",
     "front_img": "https://source.unsplash.com/random/260x320/?nature",
     "back_img": "https://source.unsplash.com/random/260x320/?technologie",
-    "project_link": "",
+    "project_link": "/",
     "github_source_code": "https://github.com/DavidPayet"
   },
   {
@@ -20,7 +20,7 @@
     "title": "Comming Soon",
     "front_img": "https://source.unsplash.com/random/260x320/?street",
     "back_img": "https://source.unsplash.com/random/260x320/?animals",
-    "project_link": "",
+    "project_link": "/",
     "github_source_code": "https://github.com/DavidPayet"
   },
   {
@@ -28,7 +28,7 @@
     "title": "Comming Soon",
     "front_img": "https://source.unsplash.com/random/260x320/?travel",
     "back_img": "https://source.unsplash.com/random/260x320/?experimental",
-    "project_link": "",
+    "project_link": "/",
     "github_source_code": "https://github.com/DavidPayet"
   }
 ]
