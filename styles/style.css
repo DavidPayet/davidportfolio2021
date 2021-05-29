@@ -62,7 +62,7 @@ button {
 }
 
 button:hover {
-  color: #F7F7FF;
+  color: #21295C;
   background: #ff7b00;
   transition: .3s ease-out;
 }
@@ -106,13 +106,17 @@ button:hover::before {
 }
 
 .loader.hidden {
-  animation: fadeOut 1s forwards;
+  animation: fadeOut 2s forwards;
 }
 
 @keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
   100% {
     opacity: 0;
-    visibility: hidden;
+    z-index: -1;
+    display: none;
   }
 }
 
@@ -172,8 +176,8 @@ button:hover::before {
 }
 
 .logo img {
-  width: auto;
-  height: 45px;
+  max-width: 35px;
+  max-height: 45px;
 }
 
 .navigation-icon {
@@ -321,7 +325,7 @@ h2 {
 }
 
 .cta-btn:nth-child(1) {
-  color: #F7F7FF;
+  color: #21295C;
   background: #ff7b00;
 }
 
@@ -332,7 +336,7 @@ h2 {
 
 .cta-btn:nth-child(1):active {
   transition: .1s;
-  color: #f7f7f7;
+  color: #21295C;
   background: #ff7b00;
   border: 2px solid #ff7b00;
 }
@@ -411,8 +415,8 @@ section {
 }
 
 .profil {
-  width: 70%;
-  height: auto;
+  max-width: 270px;
+  max-height: 235px;
 }
 
 .txt-description {
@@ -434,11 +438,11 @@ section {
 
 @keyframes bottomFinger {
   0% {
-    margin-top: 0;
+    transform: translateY(0);
   }
 
   100% {
-    margin-top: 5px
+    transform: translateY(4px);
   }
 }
 
@@ -807,7 +811,7 @@ footer {
 
 .footer-logo {
   width: 25px;
-  height: auto;
+  max-height: 33px;
   margin-right: 10px;
   margin-bottom: -13px;
 }

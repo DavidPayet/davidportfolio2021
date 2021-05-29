@@ -39,7 +39,7 @@ const tlHome = gsap.timeline({ paused: true });
 
 tlHome
   .from(homeName, { y: -50, autoAlpha: 0, ease: 'power3.out', duration: 1 })
-  .from(homeTitle, { scaleX: 1.05, autoAlpha: 0, ease: 'power3.out', duration: 1 })
+  .from(homeTitle, { scaleX: 1.05, autoAlpha: 0, ease: 'power3.out', duration: 1 }, '-=.5')
   .from(HomeSbTitle, { rotationX: '360deg', autoAlpha: 0, ease: 'power3.out', duration: 1 }, '-=1')
   .staggerFrom(homeCtaBtn, 1, { autoAlpha: 0 }, .2)
   .from(logo, { x: -50, autoAlpha: 0, rotationY: 720, ease: 'power3.out', duration: 1 }, '-=.3')
@@ -98,15 +98,15 @@ const fetchProjects = () => {
         card.innerHTML = `
             <div class="face-card front">
               <span class="card-title">${project.title}</span>
-              <img src=${project.front_img} />
+              <img src=${project.front_img} alt="illustration projet"/>
             </div>
             <div class="face-card back">
-              <img src=${project.back_img} />
+              <img src=${project.back_img} alt="illustration projet"/>
               <div class="icones">
-                <a href="#" target="_blank">
+                <a href="#" target="_blank" rel="noopener">
                   <i class="fas fa-search-plus" data-wenk="Voir le Projet"></i>
                 </a>
-                <a href=${project.github_source_code} target="_blank">
+                <a href=${project.github_source_code} target="_blank" rel="noopener">
                   <i class="fab fa-github" data-wenk="Code Source"></i>
                 </a>
               </div>
@@ -201,7 +201,7 @@ fetchQuote();
 
 
 // Contact Section Animation
-const inputFields = document.querySelectorAll('input');
+const inputFields = document.querySelectorAll('input.inputs');
 
 for (let i = 0; i < inputFields.length; i++) {
   let field = inputFields[i];
