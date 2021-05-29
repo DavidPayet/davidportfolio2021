@@ -28,7 +28,7 @@ if (document.documentElement.clientWidth > 1200) {
 // Home Animation
 const homeName = document.querySelector('.my-name');
 const homeTitle = document.querySelector('h1');
-const HomeSbTitle = document.querySelector('h2');
+const HomeSubTitle = document.querySelector('h2');
 const navBtn = document.querySelector('.navigation-icon');
 const logo = document.querySelector('.logo');
 const homeScrollDownBtn = document.querySelector('.scroll-down a span');
@@ -40,7 +40,7 @@ const tlHome = gsap.timeline({ paused: true });
 tlHome
   .from(homeName, { y: -50, autoAlpha: 0, ease: 'power3.out', duration: 1 })
   .from(homeTitle, { scaleX: 1.05, autoAlpha: 0, ease: 'power3.out', duration: 1 }, '-=.5')
-  .from(HomeSbTitle, { rotationX: '360deg', autoAlpha: 0, ease: 'power3.out', duration: 1 }, '-=1')
+  .from(HomeSubTitle, { rotationX: '360deg', autoAlpha: 0, ease: 'power3.out', duration: 1 }, '-=1')
   .staggerFrom(homeCtaBtn, 1, { autoAlpha: 0 }, .2)
   .from(logo, { x: -50, autoAlpha: 0, rotationY: 720, ease: 'power3.out', duration: 1 }, '-=.3')
   .from(navBtn, { x: 150, autoAlpha: 0, rotation: 720, ease: 'power3.out', duration: 1 }, '-=1')

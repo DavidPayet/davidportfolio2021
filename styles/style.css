@@ -106,7 +106,19 @@ button:hover::before {
 }
 
 .loader.hidden {
+  -webkit-animation: fadeOut 2s forwards;
   animation: fadeOut 2s forwards;
+}
+
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+    z-index: -1;
+  }
 }
 
 @keyframes fadeOut {
@@ -115,8 +127,8 @@ button:hover::before {
   }
   100% {
     opacity: 0;
-    z-index: -1;
     display: none;
+    z-index: -1;
   }
 }
 
