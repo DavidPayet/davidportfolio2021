@@ -16,9 +16,9 @@ body {
 }
 
 .circle-cursor {
-  width: 80px;
-  height: 80px;
-  border: 1px solid #ff7b00;
+  width: 40px;
+  height: 40px;
+  background-color: #ff7b002a;
   border-radius: 50%;
   position: fixed;
   z-index: 999;
@@ -262,7 +262,6 @@ button:hover::before {
   background: #F7F7FF;
   transform: translateX(-100%);
   transition: transform .3s;
-  /* transition-timing-function: cubic-bezier(.7, 0, .3, 1); */
 }
 
 .menu-item:hover .label::before,
@@ -483,8 +482,6 @@ section {
   width: 100%;
   height: 320px;
   cursor: pointer;
-  /* transform-style: preserve-3d;
-  -webkit-transform-style: preserve-3d; */
   perspective: 1000px;
   -webkit-perspective: 1000px;
 }
@@ -497,10 +494,7 @@ section {
   height: 100%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.25);
   background-position: center;
-  /* transition: -webkit-transform .2s ease-out; */
-  /* -o-transition: transform .2s ease-out; */
   transition: transform .3s ease-out;
-  /* transition: -webkit-transform .3s ease-out; */
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
 
@@ -528,7 +522,6 @@ section {
 
 .face-card.back {
   transform: rotateY(180deg);
-  /* -webkit-transform: rotateY(180deg); */
 }
 
 .icones {
