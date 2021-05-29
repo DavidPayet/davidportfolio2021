@@ -17,7 +17,7 @@ if (document.documentElement.clientWidth > 1200) {
   document.addEventListener('mousemove', moveCircle);
 
   document.addEventListener('click', () => {
-    gsap.fromTo(circleCursor, { scale: 1, backgroundColor: 'transparent', border: '1px solid #ff7b00' }, { scale: 1.5, duration: .2, backgroundColor: '#ff7b00', border: 'none' }).reverse(2)
+    gsap.fromTo(circleCursor, { scale: 1, backgroundColor: '#ff7b002a' }, { scale: 2, duration: .2, backgroundColor: '#ff7b00' }).reverse(2)
   });
 
 } else {
@@ -133,7 +133,7 @@ const tlPortfolio = gsap.timeline();
 
 tlPortfolio
   .from(portfolioTitle, { y: -200, opacity: 0, zIndex: -1, duration: 1 })
-  .from(portfolioCards, { opacity: 0, duration: 1 })
+  .from(portfolioCards, { y: 100, opacity: 0, duration: 1 })
 
 
 const portfolioScene = new ScrollMagic.Scene({
@@ -225,7 +225,7 @@ const tlContact = gsap.timeline();
 
 tlContact
   .from(contactTitle, { y: -200, autoAlpha: 0, zIndex: -1, duration: 1 })
-  .from(contactForm, { x: -50, autoAlpha: 0, duration: 1 })
+  .from(contactForm, { x: -50, autoAlpha: 0, duration: 1 }, '-=.5')
   .from(contactInfo, { x: 50, autoAlpha: 0, duration: 1 }, '-=1')
 
 
