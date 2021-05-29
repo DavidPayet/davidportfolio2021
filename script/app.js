@@ -1,29 +1,27 @@
-// Loader
-const loader = document.querySelector('.loader');
-
-
 // Custum Cursor
 const circleCursor = document.querySelector('.circle-cursor');
 const body = document.querySelector('body');
 
 if (document.documentElement.clientWidth > 1200) {
-
+  
   gsap.set(circleCursor, { xPercent: -50, yPercent: -50 });
-
+  
   const moveCircle = (e) => {
     gsap.to(circleCursor, .3, { x: e.clientX, y: e.clientY });
   }
-
+  
   document.addEventListener('mousemove', moveCircle);
-
+  
   document.addEventListener('click', () => {
     gsap.fromTo(circleCursor, { scale: 1, backgroundColor: '#ff7b002a' }, { scale: 2, duration: .2, backgroundColor: '#ff7b00' }).reverse(2)
   });
-
+  
 } else {
   body.removeChild(circleCursor);
 }
 
+// Loader
+const loader = document.querySelector('.loader');
 
 // Home Animation
 const homeName = document.querySelector('.my-name');
@@ -45,7 +43,7 @@ tlHome
   .from(logo, { x: -50, autoAlpha: 0, rotationY: 720, ease: 'power3.out', duration: 1 }, '-=.3')
   .from(navBtn, { x: 150, autoAlpha: 0, rotation: 720, ease: 'power3.out', duration: 1 }, '-=1')
   .from(homeScrollDownBtn, { autoAlpha: 0, ease: 'power3.out', duration: 1 }, '-=1')
-
+  .to(loader, {autoAlpha: 0, display: 'none'})
 
 portfolioAnchors.addEventListener('click', () => {
   window.location.href = '#portfolio';
@@ -321,7 +319,7 @@ sendingForm.addEventListener('submit', handleSubmit);
 
 
 window.addEventListener('load', () => {
-  loader.className += ' hidden';
+  loader.className += ' hidden-loader';
   tlHome.play();
   tlPortfolio.play();
   tlQuote.play();

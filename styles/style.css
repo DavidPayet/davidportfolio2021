@@ -12,7 +12,7 @@ html {
 
 body {
   font-family: 'Fahkwang', sans-serif;
-  background: #F7F7FF;
+  background: #21295C;
 }
 
 .circle-cursor {
@@ -105,30 +105,13 @@ button:hover::before {
   align-items: center;
 }
 
-.loader.hidden {
-  -webkit-animation: fadeOut 2s forwards;
+.loader.hidden-loader {
   animation: fadeOut 2s forwards;
 }
 
-@-webkit-keyframes fadeOut {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    display: none;
-    z-index: -1;
-  }
-}
-
 @keyframes fadeOut {
-  0% {
-    opacity: 1;
-  }
   100% {
     opacity: 0;
-    display: none;
-    z-index: -1;
   }
 }
 
