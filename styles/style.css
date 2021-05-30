@@ -582,7 +582,7 @@ i[data-wenk]::after {
   filter: sepia(70%) brightness(60%);
 }
 
-.contenu {
+.content {
   width: 90%;
   margin: 0 auto;
   max-width: 1140px;
@@ -590,7 +590,7 @@ i[data-wenk]::after {
   z-index: 2;
 }
 
-.contenu p {
+.content p {
   font-family: 'Cormorant Unicase', serif;
   letter-spacing: 8px;
   font-size: 30px;
@@ -602,11 +602,11 @@ i[data-wenk]::after {
   margin-bottom: 30px;
 }
 
-.contenu p::before {
+.content p::before {
   content: none;
 }
 
-.contenu span {
+.content span {
   font-size: 20px;
   letter-spacing: 10px;
   position: relative;
@@ -614,27 +614,6 @@ i[data-wenk]::after {
   justify-content: center;
   align-items: center;
   text-shadow: 1px 1px 5px rgba(58, 58, 58, 0.886);
-}
-
-.contenu span::before {
-  content: '';
-  position: absolute;
-  border-bottom: 1px solid rgb(255, 255, 255);
-  width: 15px;
-  height: 2px;
-  top: 50%;
-  left: 20vw;
-}
-
-.contenu span::after {
-  content: '';
-  position: absolute;
-  border-bottom: 1px solid rgb(255, 255, 255);
-  width: 15px;
-  height: 2px;
-  top: 50%;
-  right: 20vw;
-  margin-right: 15px;
 }
 
 /* Contact Section ---------------------------------------------------------------------------- */

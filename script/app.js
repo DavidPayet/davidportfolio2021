@@ -155,19 +155,19 @@ const parallaxScene = new ScrollMagic.Scene({
 
 
 // Random Quotes & Anim
-const texts = document.querySelector('.contenu p');
-const authors = document.querySelector('.contenu span');
-const contenu = document.querySelector('.contenu');
+const texts = document.querySelector('.content p');
+const authors = document.querySelector('.content span');
+const content = document.querySelector('.content');
 
 const tlQuote = gsap.timeline({ paused: true });
 
 tlQuote
-  .from(contenu, { scale: 2, opacity: 0, ease: 'power3.out', duration: 1 })
+  .from(content, { scale: 2, opacity: 0, ease: 'power3.out', duration: 1 })
 
 const displayQuote = () => {
   let index = Math.floor(Math.random() * data.length);
-  let quote = data[index].text;
-  let author = data[index].author;
+  let quote = `❝ ${data[index].text} ❞`;
+  let author = `⏤ ${data[index].author} ⏤`;
 
   if (!author) {
     author = "Anonymous";
