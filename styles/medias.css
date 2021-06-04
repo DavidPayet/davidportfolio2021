@@ -42,11 +42,11 @@
     height: 300px;
   }
 
-  .contenu p {
+  .content p {
     font-size: 22px;
   }
 
-  .contenu span {
+  .content span {
     font-size: 12px;
   }
 
@@ -208,6 +208,7 @@
   /* About Section ---------------------------------------------------------------------------- */
   .profil {
     width: 150px;
+    height: 150px;
   }
 
   .txt-description {
@@ -234,20 +235,20 @@
     padding: 50px 0;
   }
 
-  .contenu p {
+  .content p {
     font-size: 20px;
     margin-bottom: 20px;
   }
 
-  .contenu span {
+  .content span {
     font-size: 10px;
   }
 
-  .contenu span::before {
+  .content span::before {
     left: 10vw;
   }
 
-  .contenu span::after {
+  .content span::after {
     right: 10vw;
   }
 
@@ -364,12 +365,13 @@
   /* About Section ------------------------------------------------------------------------ */
   .profil {
     width: 120px;
+    height: 120px;
   }
 
   .txt-description {
     font-size: 14px;
     text-align: center;
-    padding: 80px 80px 40px;
+    padding: 60px 60px 40px;
   }
 
   /* Portfolio Section ------------------------------------------------------------------------ */
@@ -379,7 +381,7 @@
   }
 
   /* Parallax Section ------------------------------------------------------------------------ */
-  .contenu p {
+  .content p {
     font-size: 16px;
   }
 
@@ -426,6 +428,8 @@
 
   section h3 {
     letter-spacing: 6px;
+    padding-top: 40px;
+    margin-bottom: 40px;
   }
 
   /* Navigation ------------------------------------------------------------------------ */
@@ -466,30 +470,31 @@
 
   .profil {
     width: 100px;
+    height: 100px;
   }
 
   .txt-description {
     font-size: 12px;
     text-align: center;
-    padding: 80px 50px 10px;
+    padding: 40px 45px 10px;
   }
 
   /* Parallax Section ------------------------------------------------------------------------ */
-  .contenu p {
+  .content p {
     font-size: 14px;
     letter-spacing: 4px;
   }
 
-  .contenu span {
+  .content span {
     font-size: 8px;
     letter-spacing: 5px;
   }
 
-  .contenu span::before {
+  .content span::before {
     width: 10px;
   }
 
-  .contenu span::after {
+  .content span::after {
     width: 10px;
   }
 
