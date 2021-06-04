@@ -503,6 +503,14 @@
     width: 280px;
   }
 
+  .contact-info {
+    height: 50px;
+  }
+
+  .contact-info .info {
+    padding: 0;
+  }
+
   .form-bloc .form-group {
     width: 220px;
     font-size: 12px;
