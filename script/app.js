@@ -73,7 +73,7 @@ tlAbout
 const aboutScene = new ScrollMagic.Scene({
   triggerElement: aboutSection,
   triggerHook: .5,
-  reverse: true
+  reverse: false
 })
   .setTween(tlAbout)
   .addTo(controller)
@@ -137,7 +137,7 @@ tlPortfolio
 const portfolioScene = new ScrollMagic.Scene({
   triggerElement: portfolioSection,
   triggerHook: .5,
-  reverse: true
+  reverse: false
 })
   .setTween(tlPortfolio)
   .addTo(controller)
@@ -148,7 +148,7 @@ const parallaxScene = new ScrollMagic.Scene({
   triggerElement: '.parallax',
   triggerHook: 1,
   duration: '150%',
-  reverse: true
+  reverse: false
 })
   .setTween(gsap.from('.bcg', { y: '-60%', ease: Power0.easeNone, duration: 1 }))
   .addTo(controller);
@@ -230,7 +230,7 @@ tlContact
 const contactScene = new ScrollMagic.Scene({
   triggerElement: contactSection,
   triggerHook: .5,
-  reverse: true
+  reverse: false
 })
   .setTween(tlContact)
   .addTo(controller)
