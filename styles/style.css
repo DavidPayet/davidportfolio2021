@@ -641,7 +641,6 @@ i[data-wenk]::after {
 
 .contact-info {
   grid-area: 2 / 12 / 3 / 14;
-  width: 150px;
   background: #ff7b00ac;
   font-size: 40px;
   border-radius: 2px 10px 10px 2px;
@@ -653,7 +652,7 @@ i[data-wenk]::after {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 30px 0;
+  padding: 30px;
 }
 
 .contact-info .info a i {
