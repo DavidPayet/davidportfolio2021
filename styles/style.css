@@ -485,6 +485,10 @@ section {
   -webkit-perspective: 1000px;
 }
 
+.card .icones {
+  visibility: hidden;
+}
+
 .face-card {
   position: absolute;
   top: 0;
@@ -496,7 +500,6 @@ section {
   transition: transform .3s ease-out;
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
-
 }
 
 .card-title {
@@ -523,7 +526,7 @@ section {
   transform: rotateY(180deg);
 }
 
-.icones {
+.face-card.back .icones {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -553,6 +556,10 @@ section {
 
 .card:hover>.back {
   transform: rotateY(0deg);
+}
+
+.card:hover>.back .icones{
+  visibility: visible;
 }
 
 i[data-wenk]::after {
